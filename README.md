@@ -83,6 +83,4 @@ Ensure your code follows the project's coding conventions and has adequate test 
 
 ---
 
-© 2023 InventoryManagerApp Team
-
 CS-360-X6155 Mobile Architect & Programming 23EW6
