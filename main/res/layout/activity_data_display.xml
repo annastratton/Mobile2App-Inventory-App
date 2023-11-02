@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <include layout="@layout/banner_layout" />
+        <Button
+            android:id="@+id/gotoDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Dashboard"/>
+        <TextView
+            android:id="@+id/dataItemTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inventory Item Name:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/addItemEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Item" />
+
+        <TextView
+            android:id="@+id/dataItemQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inventory Quantity:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/addItemQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add Quantity" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dataRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/addDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Data" />
+    </LinearLayout>
+</layout>

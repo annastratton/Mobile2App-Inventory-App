@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <include layout="@layout/banner_layout" />
+    <Button
+        android:id="@+id/gotoDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Dashboard"/>
+
+    <TextView
+        android:id="@+id/dataItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Item"
+        android:textSize="16sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_to_delete"
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:layout_above="@+id/button_delete_selected" />
+
+    <Button
+        android:id="@+id/addDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+</LinearLayout>
+</layout>
